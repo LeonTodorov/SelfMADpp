@@ -1,0 +1,67 @@
+image_size: 512
+dataset:
+  eval:
+    FRGC:
+      path: "/home/leon/data/leon/FRGC"
+      morphs:
+        opencv: true
+        facemorpher: true
+        stylegan: true
+    FERET:
+      path: "/home/leon/data/leon/FERET"
+      morphs:
+        opencv: true
+        facemorpher: true
+        stylegan: true
+    FRLL:
+      path: "/home/leon/data/leon/FRLL"
+      morphs:
+        amsl: true
+        facemorpher: true
+        opencv: true
+        stylegan: true
+        webmorph: true
+    DiMGreedy:
+      path: "/home/leon/data/leon/DiMGreedy"
+      morphs:
+        dim_a: false
+        dim_c: false
+        fast_dim: false
+        fast_dim_ode: false
+        greedy_dim: true
+        greedy_dim_s: false
+    MorphPIPE:
+      path: "/home/leon/data/leon/MorphPIPE"
+      morphs:
+        morphs: true
+    MorCode:
+      path: "/home/leon/data/leon/MorCode"
+      morphs:
+        morphs: true
+    MIPGAN_I:
+      path: "/home/leon/data/leon/MIPGAN_I"
+      morphs:
+        morphs: true
+    MIPGAN_II:
+      path: "/home/leon/data/leon/MIPGAN_II"
+      morphs:
+        morphs: true
+    MorDIFF:
+      path: "/home/leon/data/leon/MorDIFF"
+      morphs:
+        morphs_neutral: true
+        morphs_smiling: true
+  train:
+    FF++:
+      path: /home/leon/data/leon/FF++_every10f
+    SMDD:
+      path: /home/leon/data/leon/SMDD
+    FRGC:
+      path : /home/leon/data/leon/FRGC_train
+    FRLL:
+      path : /home/leon/data/leon/FRLL_train
+    ONOT:
+      path : /home/leon/data/leon/ONOT
+    FLUXSynID:
+      path : /home/leon/data/leon/FLUXSynID_doc
+save_path: /home/leon/data/leon/models
