@@ -100,6 +100,17 @@ CUDA_VISIBLE_DEVICES=0,1 python eval.py \
 -p <path_to_checkpoint>
 ```
 
+## Checkpoints
+Different models trained on SMDD:
+
+| TIMMModel | HRNetSeg | CLIPVision | CLIPDual | CLIPFuse | 
+| --------- | -------- | ---------- | -------- | -------- |
+| [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/Eb6qILq4CIlPnENe8QKZWrQBilU_0Zz6Qme3D9jM_zyIRA?e=Hrl5TB) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EXWGEAGzYjBFuVQCCaAfgLwBVrSCTHi6x_SJQWbCgRMEBw?e=yPTdg7) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/ETF1ufG-BcJLiQqaJQuAy6kB4Coy4KF5QQ9Kb0QV-UWR-w?e=Hvy76d) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EUWVQJJS93hEpIX-pQ-WgREBkY1AX0fnholv45ehqps6sg?e=LLzI4v) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EVXmFPD4EF1Lrzq-c6OHrhcBGLExLwlIcKnQ2fWYzP0HZQ?e=bevDd6) |
+
+CLIPFuse model trained with different datasets:
+| SMDD | SMDD w/o augments| FRGC | FRLL | FaceForensics++ | ONOT | FLUXSynID |  
+| ---- | -----------------| ---- | ---- | --------------- | ---- | --------- |
+| [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EVXmFPD4EF1Lrzq-c6OHrhcBGLExLwlIcKnQ2fWYzP0HZQ?e=yogT0O) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EZI0RrkMGaxHmPKTfE5I2LEBNWJGgBDFqn0vZKg_PfFjLw?e=HubdR1) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EYxia_Q8v8VGnziMy3jTrssB0AHV6he9R_Iy07LtTJ11tg?e=pnnAya) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EWgvx3YNGrlBsSeiWCxtFxYBPONbgj5GgO1Yt9Vgp1tPNQ?e=zqss07) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EfTCP0VQHVxKs0j9tjyItBcBYlOyT6rsKFFApElDDPwVMA?e=G2eZ1O) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EYinbIFaO9tAo18KdjpQ1VIBBN8wRhiMOo7it1tWjNQbCA?e=OHXbV7) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EaH-5UOlPSdJuhNQeamCSkoBus0PyFzgvlZO-Ct1as2CLA?e=pFfMcO) |
 ## Citation
 If our work contributes to your research, we would appreciate it if you cite our paper:
 ```bibtex
