@@ -11,13 +11,10 @@ from utils.util_fun import load_data_config
 
 def main(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model_state = torch.load(args.checkpoint_path)
+    model_state = torch.load(args.checkpoint_path, map_location=device)
     model = Detector(model = model_state["model_type"])
     model.load_state_dict(model_state["model"], strict=False)
     model.train(mode=False)
-
-    if model_state["model_type"] != "CLIPFuse": # device assignment done in nets.py
-        model.to(device)
     
     out_string = ""
     results_total = {}

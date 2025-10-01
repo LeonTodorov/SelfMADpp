@@ -133,11 +133,15 @@ class CLIPDual(nn.Module):
         logits = image_features * self.clip_model.logit_scale.exp() @ text_features.T
         return logits
 
-class CLIPFuse(nn.Module):
+class SelfMADpp(nn.Module):
     def __init__(self, num_classes):
-        super(CLIPFuse, self).__init__()
-        self.device_main = torch.device("cuda:0")
-        self.device_clip = torch.device("cuda:1")
+        super(SelfMADpp, self).__init__()
+        if torch.cuda.device_count() == 1:
+            self.device_main = torch.device("cuda")
+            self.device_clip = torch.device("cuda")
+        else:
+            self.device_main = torch.device("cuda:0")
+            self.device_clip = torch.device("cuda:1")
 
         # ─── HRNet ───
         self.cls_net = timm.create_model(
@@ -253,5 +257,5 @@ class CLIPFuse(nn.Module):
         return logits_final, seg_maps
     
 def test():
-    net = CLIPFuse(num_classes=2)
+    net = SelfMADpp(num_classes=2)
     print(net)
