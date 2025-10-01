@@ -89,7 +89,7 @@ CUDA_VISIBLE_DEVICES=0,1 python train.py \
 -n <session_name> \
 <--forget>
 ```
-- `<model_type>` is one of `TIMMModel`, `HRNetSeg`, `CLIPVision`, `CLIPDual` or `CLIPFuse`
+- `<model_type>` is one of `TIMMModel`, `HRNetSeg`, `CLIPVision`, `CLIPDual` or `SelfMADpp`
 - `<train_dataset>` is one of `SMDD`, `FF++`, `FRGC`, `FRLL`, `ONOT` or `FLUXSynID`
 - `<--forget>` disables saving of logs and checkpoints.
 
@@ -103,14 +103,14 @@ CUDA_VISIBLE_DEVICES=0,1 python eval.py \
 ## Checkpoints
 Different models trained on SMDD:
 
-| TIMMModel | HRNetSeg | CLIPVision | CLIPDual | CLIPFuse | 
-| --------- | -------- | ---------- | -------- | -------- |
-| [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/Eb6qILq4CIlPnENe8QKZWrQBilU_0Zz6Qme3D9jM_zyIRA?e=Hrl5TB) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EXWGEAGzYjBFuVQCCaAfgLwBVrSCTHi6x_SJQWbCgRMEBw?e=yPTdg7) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/ETF1ufG-BcJLiQqaJQuAy6kB4Coy4KF5QQ9Kb0QV-UWR-w?e=Hvy76d) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EUWVQJJS93hEpIX-pQ-WgREBkY1AX0fnholv45ehqps6sg?e=LLzI4v) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EVXmFPD4EF1Lrzq-c6OHrhcBGLExLwlIcKnQ2fWYzP0HZQ?e=bevDd6) |
+| TIMMModel | HRNetSeg | CLIPVision | CLIPDual | SelfMAD++ | 
+| --------- | -------- | ---------- | -------- | --------- |
+| [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/Ea6KQtESTBFBvAi6E46tpWIBqQ-EamQbp1GzC9IumgcEOA?e=HX1OsA) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/EaDRPZApGSJApWksNj4h5lUBVAKWjnMnhTBtMQcP7LhRnA?e=GWAuGX) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/Ee7KxzzX1oZMq04jIXkBXL8Bfcz5WuE16nO2OQVn_6J8hQ?e=A4vmsq) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/EXdg1ce6bpBIkzsi3mNN2XcBOu3sRvW2x0RdvLGRVoQSTA?e=IZZ7mf) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/EXPI80C7nVJGm8L130BWR2IBhcaUoDusyDMBYtXdJxgnHQ?e=oJRNNV) |
 
-CLIPFuse model trained with different datasets:
+SelfMAD++ model trained with different datasets:
 | SMDD | SMDD w/o augments| FRGC | FRLL | FaceForensics++ | ONOT | FLUXSynID |  
 | ---- | -----------------| ---- | ---- | --------------- | ---- | --------- |
-| [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EVXmFPD4EF1Lrzq-c6OHrhcBGLExLwlIcKnQ2fWYzP0HZQ?e=yogT0O) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EZI0RrkMGaxHmPKTfE5I2LEBNWJGgBDFqn0vZKg_PfFjLw?e=HubdR1) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EYxia_Q8v8VGnziMy3jTrssB0AHV6he9R_Iy07LtTJ11tg?e=pnnAya) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EWgvx3YNGrlBsSeiWCxtFxYBPONbgj5GgO1Yt9Vgp1tPNQ?e=zqss07) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EfTCP0VQHVxKs0j9tjyItBcBYlOyT6rsKFFApElDDPwVMA?e=G2eZ1O) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EYinbIFaO9tAo18KdjpQ1VIBBN8wRhiMOo7it1tWjNQbCA?e=OHXbV7) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/lt9980_student_uni-lj_si/EaH-5UOlPSdJuhNQeamCSkoBus0PyFzgvlZO-Ct1as2CLA?e=pFfMcO) |
+| [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/EXPI80C7nVJGm8L130BWR2IBhcaUoDusyDMBYtXdJxgnHQ?e=D4OiAr) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/ESk6lGqDvaNEqmhe2I19hMEBl62_WnKkpCJzEMhkfHgS6w?e=TkqYIx) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/ESoOdu-IHqxNv2tZZ0kLL84Bmemb17dBtm4ImuGkYjl6aA?e=9a1Ajb) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/EU1BcLbWOD9KrT6EGJG1cTIBSW9hq8iSkIkGWk46BEyY0g?e=nyRNaa) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/EQ1E4_8NcMtIvWz0xd_XgDoB8URmLxXF3zMpwMU3UXKLLw?e=G4IE4h) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/EbQNfonN4HVHrdJxBfEHdiwBR1J1Ik8bYks9Te3Rshtteg?e=2dKMbp) | [Link](https://unilj-my.sharepoint.com/:u:/g/personal/leon_todorov_fe1_uni-lj_si/EeLT-ElIRgNIuVqV7uzVypgBouOl8VbdrfkaRqtLGF1w0g?e=xIM6bq) |
 ## Citation
 If our work contributes to your research, we would appreciate it if you cite our paper:
 ```bibtex
