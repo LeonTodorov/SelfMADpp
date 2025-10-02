@@ -77,6 +77,14 @@ Assumed to have the following directory structure:
 
 The directories `<dataset_name>_lm` and `<dataset_name>_lb` contain the extracted landmarks and the corresponding labels, respectively. The expected paths can be adjusted in `data/data_config.yaml`.
 
+#### Additional training/evaluation datasets:
+- Must follow the directory structures defined above  
+- Paths must be specified in `data/data_config.yaml`  
+- Training datasets require precomputed **landmarks** and **labels**  
+- Evaluation datasets require **cropped image inputs**  
+- Landmarks, labels, and crops can be generated with the helper scripts in `utils/preprocessing`
+
+
 ## Training     
 During training checkpoints and logs are saved in the path specified in `data/data_config.yaml`. The training script can be run with:
 ```bash
