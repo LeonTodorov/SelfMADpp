@@ -38,7 +38,7 @@ def main(args) -> None:
     
     data_cfg = load_data_config("data/data_config.yaml")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    train_dataset=SelfMADppDataset(cfg=data_cfg, phase='train', source_name="SMDD")
+    train_dataset=SelfMADppDataset(cfg=data_cfg, phase='train', source_name=args.train_dataset)
     train_loader=torch.utils.data.DataLoader(train_dataset,
                         batch_size=cfg['batch_size'] // 2,
                         shuffle=True,

@@ -46,7 +46,7 @@ class Detector(nn.Module):
 def test():
     from utils.util_fun import load_data_config
     cfg = load_data_config("data/data_config.yaml")
-    model = Detector(model="SelfMADpp", lr=1e-4)
+    model = Detector(model="SelfMAD++", lr=1e-4)
     img = torch.randn(4, 3, cfg['image_size'], cfg['image_size']).cuda()
     label = torch.randint(0, 2, (4,)).cuda()
     mask = torch.randint(0, 2, (4, 1, cfg['image_size'], cfg['image_size'])).cuda()

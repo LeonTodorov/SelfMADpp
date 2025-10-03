@@ -97,7 +97,7 @@ CUDA_VISIBLE_DEVICES=0,1 python train.py \
 -n <session_name> \
 <--forget>
 ```
-- `<model_type>` is one of `TIMMModel`, `HRNetSeg`, `CLIPVision`, `CLIPDual` or `SelfMADpp`
+- `<model_type>` is one of `TIMMModel`, `HRNetSeg`, `CLIPVision`, `CLIPDual` or `SelfMAD++`
 - `<train_dataset>` is one of `SMDD`, `FF++`, `FRGC`, `FRLL`, `ONOT` or `FLUXSynID`
 - `<--forget>` disables saving of logs and checkpoints.
 
