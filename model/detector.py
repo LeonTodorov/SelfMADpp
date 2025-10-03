@@ -12,7 +12,7 @@ class Detector(nn.Module):
             "HRNetSeg": HRNetSeg,
             "CLIPVision": CLIPVision,
             "CLIPDual": CLIPDual,
-            "SelfMADpp": SelfMADpp,
+            "SelfMAD++": SelfMADpp,
         }
         if model in model_map:
             self.net = model_map[model](num_classes=2)
