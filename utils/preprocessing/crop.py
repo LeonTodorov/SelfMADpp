@@ -12,7 +12,7 @@ from PIL import Image
 def crop_face(
     img,
     landmarks: np.ndarray,
-    margin: float = 6.25,
+    margin: float = 12.5,
     pad: bool = False,
 ):
     frame = img if isinstance(img, np.ndarray) else np.array(img)
